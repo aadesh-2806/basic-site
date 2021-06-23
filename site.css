@@ -1,0 +1,198 @@
+body {
+    background-color: #212F45;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.top {
+    background-color: rgb(137, 58, 156);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+    font-size: 1.5em;
+    padding: 0.2em;
+}
+.top_left , .top_right {
+    flex-grow: 0.25;
+    display: flex;
+    justify-content: space-evenly;
+}
+.top_between{
+    flex-grow: 1;
+    color: mintcream !important;
+    display: flex;
+    justify-content: space-evenly;
+}
+.log_in {
+    background-color: mediumslateblue;
+    padding: 0.2em;
+    border-radius: 10px;
+}
+.sign_up {
+    background-color: red;
+    padding: 0.2em;
+    border-radius: 10px;
+}
+.log_in:hover , .sign_up:hover {
+    text-decoration: none;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0em 0.5em 0.5em -0.4em gray;
+}
+h1 , h2 , h3 ,h4 {
+    color: wheat;
+}
+.heading {
+    display: flex;
+    justify-content: center;
+}
+h4 {
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+h5 {
+    margin: unset;
+    margin-bottom: 3px;
+    color: skyblue;
+    font-size: 1em;
+    text-align: center;
+}
+img::selection{
+    background-color: unset;
+}
+p {
+    border-top: 0.05em solid #32435f ;
+}
+p::selection{
+    background-color: darkgray;
+}
+span {
+    color: mediumpurple;
+}
+.small_bu {
+    text-align: center;
+}
+.small_bu::selection {
+    background-color: unset;
+}
+.small_button {
+    width: 2em;
+    height: 2em;
+    border-radius: 25% 25%;
+    background-color: unset;
+    margin: 3px;
+}
+.image_src {
+    width: 10em;
+    height: 10em;
+    
+}
+.name_image {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+}
+.name_img_div {
+    display: flex;
+    justify-content: center;
+}
+br::selection{
+    background-color: unset;
+} 
+a {
+    text-decoration: none;
+    color: ivory;
+}
+.click_here {
+    font-style: oblique;
+    font-weight: 700;
+    color: rgb(233, 83, 113);
+    
+}
+a:hover {
+    text-decoration: underline;
+    color: coral;
+}
+.section {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.sectionI {
+    width: 100%;
+}
+.sectionII {
+    font-size: 90%;
+    background-color: #0B525B;
+    width: 19em;
+    height: 35em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px groove white;
+}
+.secII {
+    color: burlywood;
+    font-size: 2em;
+}
+.secII:hover {
+    color: chocolate;
+}
+.secII_nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: lemonchiffon;
+}
+.site {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.site div {
+    margin-right: 15px;
+}
+footer {
+    text-align: center;
+    justify-self: self-end ;
+    font-size: 15px;
+    margin-top: 20px;
+    border-top: 0.05px solid black;
+    color: whitesmoke;
+    padding-top: 5px;
+}
+@media (max-width: 570px){
+    .section{
+        flex-direction: column-reverse;
+    }
+    .sectionII {
+        display: flex;
+        flex-direction: row;
+        font-size: 0.05em;
+        width: 100%;
+        height: 100%;
+    }
+    .secII_nav {
+        display: flex;
+        flex-direction: row;
+    }
+    .top{
+        font-size: 15px;
+    }
+}
+@media (max-width: 510px){
+    .top{
+        font-size: 10px;
+    }
+    .small_button {
+        width: 1.5em;
+        height: 1.5em;
+        margin: 1px;
+    }
+    .small_bu{
+        height: 30px;
+        width: 90px;
+    }
+    h5{
+        font-size: 0.5em;
+    }
+}
